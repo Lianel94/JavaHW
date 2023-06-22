@@ -10,7 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
         ArrayList<String[]> people = new ArrayList<>();
-        System.out.println("Введите данные в формате ФИО, возраст и пол: ");
+        System.out.println("Type your last name, name, patronymic name, age and gender: ");
         while (true) {
             String a = iScanner.nextLine();
             if (a.equals("q"))
