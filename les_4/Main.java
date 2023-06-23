@@ -21,6 +21,22 @@ public class Main {
             System.out.printf("%s %s.%s. %s %s\n", i[0], i[1].toUpperCase().charAt(0), i[2].toUpperCase().charAt(0),
                     i[3], i[4]);
         }
+
+        ArrayList<String> lastName = new ArrayList<>();
+        ArrayList<String> name = new ArrayList<>();
+        ArrayList<String> patronymicName = new ArrayList<>();
+        ArrayList<Integer> age = new ArrayList<>();
+        ArrayList<Boolean> gender = new ArrayList<>();
+
+        for (String[] i : people) {
+            lastName.add(i[0]);
+            name.add(i[1]);
+            patronymicName.add(i[2]);
+            age.add(Integer.parseInt(i[3]));
+            gender.add(i[4].toLowerCase().contains("m"));
+
+        }
+
         String a = iScanner.nextLine();
         if (a.equals("q")) {
             System.exit(0);
